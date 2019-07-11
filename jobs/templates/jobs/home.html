@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.5">
-  <title>Album example · Bootstrap</title>
+  <title>Henriette Hettinga</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -35,15 +35,15 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Henriette Hettinga</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Henriette Hettinga</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">LinkedIn</a>
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/henriette-hettinga-89909912">LinkedIn</a>
           <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
+          <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
         </div>
       </div>
     </nav>
@@ -58,7 +58,7 @@
         <p>
           <a href="mailto:empty.mailbox2019@gmail.com" class="btn btn-primary my-2">Contact</a>
         </p>
-        <img src="{% static 'HH.png' %}" alt="Picture HH">
+        <img src="{% static 'HH.png' %}" height=300 alt="Picture HH">
       </div>
     </section>
 
