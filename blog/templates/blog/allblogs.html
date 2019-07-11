@@ -55,7 +55,23 @@
     <br>
     <h2>Latest posts</h2>
     <hr/>
+    <div class="container">
+      <div class="row">
+        {% for blog in blog.all %}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <!-- The {{ job.image.url }} comes from the ImageField in the Job model: -->
+            <!-- it creates a property on the property image that stores that info -->
+            <img class="card-img-top" width="100%" height="225" src="{{ blog.image.url }}" />
+            <div class="card-body">
+              <p class="card-text">{{ blog.body }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
+    </div>
 
     </div>
 
